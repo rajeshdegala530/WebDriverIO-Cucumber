@@ -4,8 +4,8 @@ import assert from "assert"
 Then (/^search results related to "(.*)" will be displayed$/,keyword =>{
 
     const links = $$(".LC20lb");
-    links.forEach(link =>{
-        const linkText = link.getText().toLowerCase();
+    links.forEach(links =>{
+        const linkText = links.getText().toLowerCase();
 
         if (linkText){
             assert(
