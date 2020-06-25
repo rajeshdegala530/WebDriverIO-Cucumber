@@ -1,4 +1,6 @@
-import assert from "assert"
+import assert from "assert";
+import SearchPage from "../../pages/SearchPage"
+
 
 /**
  * Ensure the link text includes keyword
@@ -7,15 +9,15 @@ import assert from "assert"
  *
  */
 
- export default (links, keyword) =>{
+ export default keyword =>{
 
-    links.forEach(links => {
+    SearchPage.searchResultsLinks.forEach(links => {
         const linkText = links.getText().toLowerCase();
 
         if (linkText){
             assert(
                 linkText.includes(keyword),
-                'link text does not include ${keyword}'
+                'Link ${linkText} does not include ${keyword}'
             );
         }
         

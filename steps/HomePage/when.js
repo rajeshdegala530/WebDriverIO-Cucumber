@@ -1,7 +1,7 @@
 import {When} from "cucumber";
-import search from "../../support/actions/search"
+import googleSearch from "../../support/actions/googleSearch"
 
 When(/^the user enter "(.*)" into the search bar$/, keyword => {
-search(keyword, $(".gLFyf.gsfi"),$(".gNO89b"));
+googleSearch(keyword);
 
 });

@@ -1,4 +1,4 @@
-class Home {
+class HomePage {
     get url()
     {
         return "/";
@@ -23,4 +23,4 @@ search(keyword) {
 
 }
 
-module.exports = new Home();
+module.exports = new HomePage();
