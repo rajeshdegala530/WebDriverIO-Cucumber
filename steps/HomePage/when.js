@@ -1,10 +1,7 @@
-import {When} from "cucumber"
+import {When} from "cucumber";
+import search from "../../support/actions/search"
 
 When(/^the user enter "(.*)" into the search bar$/, keyword => {
-    $(".gLFyf.gsfi").waitForDisplayed(5000);
-    $(".gLFyf.gsfi").click();
-    $(".gLFyf.gsfi").setValue("cucumber");
-    $(".gNO89b").waitForDisplayed(5000);
-    $(".gNO89b").click();
+search(keyword, $(".gLFyf.gsfi"),$(".gNO89b"));
 
 });

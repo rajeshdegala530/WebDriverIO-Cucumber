@@ -1,6 +1,7 @@
-import {Given} from "cucumber"
+import {Given} from "cucumber";
+import goToURL from "../../support/actions/goToURL"
 
 Given("a web browser is at the Google home page",()=>{
 
-    browser.url("/");
+    goToURL("/")
 });
